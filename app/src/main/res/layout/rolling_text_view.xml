@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal">
+
+
+
+        <com.robinhood.ticker.TickerView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:id="@+id/num1"
+            android:textSize="30sp"
+            android:padding="10sp"
+            android:gravity="center"
+            
+            android:background="@drawable/corner_radius"
+            android:layout_margin="5sp"
+          >
+
+        </com.robinhood.ticker.TickerView>
+        <com.robinhood.ticker.TickerView
+            android:layout_width="35sp"
+            android:id="@+id/num2"
+            
+            android:padding="10sp"
+            android:layout_margin="5sp"
+            android:gravity="center"
+            android:textSize="30sp"
+            android:text="0"
+            android:layout_height="match_parent"
+            android:background="@drawable/corner_radius">
+
+        </com.robinhood.ticker.TickerView>
+        <com.robinhood.ticker.TickerView
+            android:layout_width="35sp"
+            android:padding="10sp"
+            android:id="@+id/num3"
+            
+            android:layout_margin="5sp"
+            android:gravity="center"
+            android:textSize="30sp"
+            android:text="0"
+            android:layout_height="match_parent"
+            android:background="@drawable/corner_radius">
+
+        </com.robinhood.ticker.TickerView>
+        <com.robinhood.ticker.TickerView
+            android:layout_width="35sp"
+            android:layout_height="match_parent"
+            android:padding="10sp"
+            android:id="@+id/num4"
+            
+            android:layout_margin="5sp"
+            android:gravity="center"
+            android:textSize="30sp"
+            android:text="0"
+            android:background="@drawable/corner_radius">
+
+        </com.robinhood.ticker.TickerView>
+    </LinearLayout>
+

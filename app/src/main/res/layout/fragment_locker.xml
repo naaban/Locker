@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragment.Locker.LockerFragment">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="ScrollViewCount,UselessParent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <com.google.android.material.card.MaterialCardView android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:layout_width="match_parent">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10sp"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="200sp"
+                        android:id="@+id/locker1"
+                        android:src="@drawable/ic_locked">
+                    </ImageView>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:textColor="@color/black"
+                        android:layout_margin="5sp"
+                        android:id="@+id/status"
+                        android:layout_gravity="center"
+                        android:text="Locker Status: Locked">
+
+                    </TextView>
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_margin="10sp"
+                android:layout_height="wrap_content">
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TableRow
+                        android:weightSum="2"
+                        android:layout_margin="10sp">
+                        <TextView
+                            android:layout_weight="1"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:text="BT's">
+                        </TextView>
+                        <TextView
+                            android:layout_weight="1"
+                            android:id="@+id/bt_s">
+                        </TextView>
+                    </TableRow>
+
+                    <TableRow
+                        android:weightSum="2"
+                        android:layout_margin="10sp">
+                        <TextView
+                            android:layout_weight="1"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:text="Lock 1">
+                        </TextView>
+                        <TextView
+                            android:layout_weight="1"
+                            android:id="@+id/lock_1">
+                        </TextView>
+                    </TableRow>
+                    <TableRow
+                        android:weightSum="2"
+                        android:layout_margin="10sp">
+                        <TextView
+                            android:layout_weight="1"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:text="Lock 2">
+                        </TextView>
+                        <TextView
+                            android:layout_weight="1"
+                            android:id="@+id/lock_2">
+                        </TextView>
+                    </TableRow>
+
+                    <TableRow
+                        android:weightSum="2"
+                        android:layout_margin="10sp">
+                        <TextView
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:layout_weight="1"
+                            android:text="Lock 1 Close Status">
+                        </TextView>
+                        <TextView
+                            android:layout_weight="1"
+                            android:id="@+id/lock_1_close_s">
+                        </TextView>
+                    </TableRow>
+
+                    <TableRow
+                        android:weightSum="2"
+                        android:layout_margin="10sp">
+                        <TextView
+                            android:layout_weight="1"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:text="Lock 1 Open Status">
+                        </TextView>
+                        <TextView
+                            android:layout_weight="1"
+                            android:id="@+id/lock_1_open_s">
+                        </TextView>
+                    </TableRow>
+
+
+                    <TableRow
+                        android:weightSum="2"
+                        android:layout_margin="10sp">
+                        <TextView
+                            android:layout_weight="1"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:text="Lock 2 Close Status">
+                        </TextView>
+                        <TextView
+                            android:layout_weight="1"
+                            android:id="@+id/lock_2_close_s">
+                        </TextView>
+                    </TableRow>
+
+                    <TableRow
+                        android:weightSum="2"
+                        android:layout_margin="10sp">
+                        <TextView
+                            android:layout_weight="1"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:text="Lock 2 Open Status">
+                        </TextView>
+                        <TextView
+                            android:layout_weight="1"
+                            android:id="@+id/lock_2_open_s">
+                        </TextView>
+                    </TableRow>
+
+                    <TableRow
+                        android:weightSum="2"
+                        android:layout_margin="10sp">
+                        <TextView
+                            android:layout_weight="1"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:text="Motor 1">
+                        </TextView>
+                        <TextView
+                            android:layout_weight="1"
+                            android:id="@+id/motor1">
+                        </TextView>
+                    </TableRow>
+                    <TableRow
+                        android:weightSum="2"
+                        android:layout_margin="10sp">
+                        <TextView
+                            android:layout_weight="1"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:text="Motor 2">
+                        </TextView>
+                        <TextView
+                            android:layout_weight="1"
+                            android:id="@+id/motor2">
+                        </TextView>
+                    </TableRow>
+                    <TableRow
+                        android:weightSum="2"
+                        android:layout_margin="10sp">
+                        <TextView
+                            android:layout_weight="1"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:text="V Sen 1">
+                        </TextView>
+                        <TextView
+                            android:layout_weight="1"
+                            android:id="@+id/v_sen_1">
+                        </TextView>
+                    </TableRow>
+
+                    <TableRow
+                        android:weightSum="2"
+                        android:layout_margin="10sp">
+                        <TextView
+                            android:layout_weight="1"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:text="T Sen 1">
+                        </TextView>
+                        <TextView
+                            android:layout_weight="1"
+                            android:id="@+id/t_sen_1">
+                        </TextView>
+                    </TableRow>
+                    <TableRow
+                        android:weightSum="2"
+                        android:layout_margin="10sp">
+                        <TextView
+                            android:layout_weight="1"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:text="Data 1">
+                        </TextView>
+                        <TextView
+                            android:layout_weight="1"
+                            android:id="@+id/data1">
+                        </TextView>
+                    </TableRow>
+
+                    <TableRow
+                        android:weightSum="2"
+                        android:layout_margin="10sp">
+                        <TextView
+                            android:layout_weight="1"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:text="Data 2">
+                        </TextView>
+                        <TextView
+                            android:layout_weight="1"
+                            android:id="@+id/data2">
+                        </TextView>
+                    </TableRow>
+                    <TableRow
+                        android:weightSum="2"
+                        android:layout_margin="10sp">
+                        <TextView
+                            android:layout_weight="1"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:text="Data 3">
+                        </TextView>
+                        <TextView
+                            android:layout_weight="1"
+                            android:id="@+id/data3">
+                        </TextView>
+                    </TableRow>
+
+                    <TableRow
+                        android:weightSum="2"
+                        android:layout_margin="10sp">
+                        <TextView
+                            android:layout_weight="1"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:text="Data 4">
+                        </TextView>
+                        <TextView
+                            android:layout_weight="1"
+                            android:id="@+id/data4">
+                        </TextView>
+                    </TableRow>
+
+                    <TableRow
+                        android:weightSum="2"
+                        android:layout_margin="10sp">
+                        <TextView
+                            android:layout_weight="1"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:text="Error Code">
+                        </TextView>
+                        <TextView
+                            android:layout_weight="1"
+                            android:id="@+id/err_code">
+                        </TextView>
+                    </TableRow>
+                    <TableRow
+                        android:weightSum="2"
+                        android:layout_margin="10sp">
+                        <TextView
+                            android:layout_weight="1"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:text="Retry Count">
+                        </TextView>
+                        <TextView
+                            android:layout_weight="1"
+                            android:id="@+id/retry_count">
+                        </TextView>
+                    </TableRow>
+
+                </TableLayout>
+            </com.google.android.material.card.MaterialCardView>
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</FrameLayout>
